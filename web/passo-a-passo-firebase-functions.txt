@@ -1,0 +1,13 @@
+# instalar dependencias
+  npm install firebase-functions@latest firebase-admin@latest --save
+  npm install -g firebase-tools
+
+# fazer login no firebase e associar o projeto ao cloud functions
+  firebase login
+
+  firebase init functions
+
+# escolher uma linguagem de programação (Typescript / JavaScript)
+
+# qualquer problema com o npm, tentar o comando abaixo
+  npm cache clean --force

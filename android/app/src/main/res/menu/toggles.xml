@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:title="R$"
+    android:checked="true"
+    android:id="@+id/toggleRS"/>
+  <item
+    android:title="kWh"
+    android:id="@+id/togglekWh"/>
+</menu>

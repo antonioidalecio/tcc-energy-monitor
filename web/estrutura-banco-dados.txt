@@ -1,0 +1,26 @@
+users: {
+  usuario0001: {
+    tarifa: 1.2345,
+    historico: {
+      2018: {
+        10: {
+          target: 2000,
+          13: {
+            asdçlfjasdflkkj: {
+              hora: '1000',
+              potencia: 5000.23
+            }
+          }
+        },
+        11: {
+          13: {
+            asdçlfjasdflkkj: {
+              timestamp: 12345,
+              potencia: 5000.23
+            }
+          }
+        }
+      }      
+    }
+  }
+}

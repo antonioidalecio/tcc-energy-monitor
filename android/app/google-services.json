@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "52839860893",
+    "firebase_url": "https://tcc-energy-monitor.firebaseio.com",
+    "project_id": "tcc-energy-monitor",
+    "storage_bucket": "tcc-energy-monitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52839860893:android:866659afda570441",
+        "android_client_info": {
+          "package_name": "com.blackgrain.android.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52839860893-k4pfctapkh97e04b240rofbqhbp4egli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blackgrain.android.firebasetest",
+            "certificate_hash": "1da74476a3476952239b1ecce5f7773e042bf27c"
+          }
+        },
+        {
+          "client_id": "52839860893-md3saa1qj7akd0pbno5nsfc71iaploho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAayXVg0GS4y8o28DzkkgZW8rIkjDOsXlU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52839860893-md3saa1qj7akd0pbno5nsfc71iaploho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52839860893:android:b808c76612308557",
+        "android_client_info": {
+          "package_name": "com.tcc.energymonitor.energymonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52839860893-j7eim2f94pbr88v3s97i0mk1trhs5pul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tcc.energymonitor.energymonitor",
+            "certificate_hash": "1da74476a3476952239b1ecce5f7773e042bf27c"
+          }
+        },
+        {
+          "client_id": "52839860893-md3saa1qj7akd0pbno5nsfc71iaploho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAayXVg0GS4y8o28DzkkgZW8rIkjDOsXlU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52839860893-md3saa1qj7akd0pbno5nsfc71iaploho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

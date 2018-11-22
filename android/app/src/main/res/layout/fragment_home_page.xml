@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:plainpie="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.RealTime">
+
+  <android.support.constraint.ConstraintLayout
+      android:id="@+id/listChart"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  
+    <TextView
+      android:id="@+id/currentDemand"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="8dp"
+      android:text="Demanda Atual"
+      android:textAlignment="center"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      plainpie:layout_constraintEnd_toEndOf="parent"
+      plainpie:layout_constraintHorizontal_bias="0.0"
+      plainpie:layout_constraintStart_toStartOf="parent"
+      plainpie:layout_constraintTop_toTopOf="parent"
+      tools:text="Demanda Atual" />
+  
+    <az.plainpie.PieView
+      android:id="@+id/pieView"
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:layout_gravity="center"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:alpha="0.1"
+      android:visibility="visible"
+      plainpie:inner_pie_padding="30"
+      plainpie:inner_text_visibility="true"
+      plainpie:layout_constraintEnd_toEndOf="parent"
+      plainpie:layout_constraintStart_toStartOf="parent"
+      plainpie:layout_constraintTop_toBottomOf="@+id/currentDemand"
+      plainpie:percentage_size="40" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="150dp"
+        android:minHeight="150dp"
+        plainpie:layout_constraintBottom_toBottomOf="@+id/pieView"
+        plainpie:layout_constraintEnd_toEndOf="@+id/pieView"
+        plainpie:layout_constraintStart_toStartOf="@+id/pieView"
+        plainpie:layout_constraintTop_toTopOf="@+id/pieView" />
+  
+  
+    <TextView
+      android:id="@+id/consumoatual"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="4dp"
+      android:text="Você já Consumiu este Mês: "
+      android:textAlignment="center"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      plainpie:layout_constraintEnd_toEndOf="parent"
+      plainpie:layout_constraintHorizontal_bias="0.0"
+      plainpie:layout_constraintStart_toStartOf="parent"
+      plainpie:layout_constraintTop_toBottomOf="@+id/pieView" />
+  
+    <TextView
+      android:id="@+id/consumoreal"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="8dp"
+      android:text="Consumo por Horários"
+      android:textAlignment="center"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      plainpie:layout_constraintEnd_toEndOf="parent"
+      plainpie:layout_constraintHorizontal_bias="0.0"
+      plainpie:layout_constraintStart_toStartOf="parent"
+      plainpie:layout_constraintTop_toBottomOf="@+id/consumo"
+      tools:text="Consumo por Horários" />
+  
+    <com.github.mikephil.charting.charts.BarChart
+      android:id="@+id/barChart"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="0dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      android:padding="0dp"
+      android:paddingStart="0dp"
+      android:paddingLeft="0dp"
+      android:paddingTop="0dp"
+      android:paddingEnd="0dp"
+      android:paddingRight="0dp"
+      android:paddingBottom="0dp"
+      plainpie:layout_constraintBottom_toBottomOf="parent"
+      plainpie:layout_constraintEnd_toEndOf="parent"
+      plainpie:layout_constraintHorizontal_bias="0.913"
+      plainpie:layout_constraintStart_toStartOf="parent"
+      plainpie:layout_constraintTop_toBottomOf="@+id/consumoreal">
+  
+    </com.github.mikephil.charting.charts.BarChart>
+  
+    <TextView
+      android:id="@+id/consumo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:text="R$0.00"
+      android:textColor="@android:color/black"
+      android:textSize="50sp"
+      android:textStyle="bold"
+      plainpie:layout_constraintEnd_toEndOf="parent"
+      plainpie:layout_constraintHorizontal_bias="0.502"
+      plainpie:layout_constraintStart_toStartOf="parent"
+      plainpie:layout_constraintTop_toBottomOf="@+id/consumoatual" />
+
+  </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
